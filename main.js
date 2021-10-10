@@ -129,7 +129,7 @@ function up(){
 }
 
 function down(){
-    if (player_y <= 600){
+    if (player_y <= 500){
         player_y = player_y + blockImage_height;
         console.log("block Image Height" + blockImage_height);
         console.log("When down arrow is pressed Player X = " + player_x + "Player Y" + player_y);
@@ -139,7 +139,7 @@ function down(){
 }
 
 function right(){
-    if (player_x <= 1000){
+    if (player_x <= 850){
         player_x = player_x + blockImage_width;
         console.log("block Image Width" + blockImage_width);
         console.log("When right arrow is pressed Player X = " + player_x + "Player Y" + player_y);
@@ -157,3 +157,4 @@ function left(){
         player_update();
     }
 }
+
